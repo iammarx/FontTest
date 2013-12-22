@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09646D5185F4B4500799765 /* TabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09646D4185F4B4500799765 /* TabelViewController.m */; };
+		A09646D7185F4B8F00799765 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09646D6185F4B8F00799765 /* Cell.xib */; };
+		A09646DA185F4C0200799765 /* TabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A09646D9185F4C0200799765 /* TabelCell.m */; };
 		A0F9A1281859BB18002B0146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F9A1271859BB18002B0146 /* Foundation.framework */; };
 		A0F9A12A1859BB18002B0146 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F9A1291859BB18002B0146 /* CoreGraphics.framework */; };
 		A0F9A12C1859BB18002B0146 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F9A12B1859BB18002B0146 /* UIKit.framework */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A09646D3185F4B4500799765 /* TabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelViewController.h; sourceTree = "<group>"; };
+		A09646D4185F4B4500799765 /* TabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelViewController.m; sourceTree = "<group>"; };
+		A09646D6185F4B8F00799765 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		A09646D8185F4C0200799765 /* TabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelCell.h; sourceTree = "<group>"; };
+		A09646D9185F4C0200799765 /* TabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelCell.m; sourceTree = "<group>"; };
 		A0F9A1241859BB18002B0146 /* FontTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F9A1271859BB18002B0146 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0F9A1291859BB18002B0146 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +123,11 @@
 				A0F9A1361859BB18002B0146 /* AppDelegate.h */,
 				A0F9A1371859BB18002B0146 /* AppDelegate.m */,
 				A0F9A1391859BB18002B0146 /* Main.storyboard */,
+				A09646D3185F4B4500799765 /* TabelViewController.h */,
+				A09646D4185F4B4500799765 /* TabelViewController.m */,
+				A09646D6185F4B8F00799765 /* Cell.xib */,
+				A09646D8185F4C0200799765 /* TabelCell.h */,
+				A09646D9185F4C0200799765 /* TabelCell.m */,
 				A0F9A13C1859BB18002B0146 /* ViewController.h */,
 				A0F9A13D1859BB18002B0146 /* ViewController.m */,
 				A0F9A13F1859BB18002B0146 /* Images.xcassets */,
@@ -229,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F9A1401859BB18002B0146 /* Images.xcassets in Resources */,
+				A09646D7185F4B8F00799765 /* Cell.xib in Resources */,
 				A0F9A1321859BB18002B0146 /* InfoPlist.strings in Resources */,
 				A0F9A13B1859BB18002B0146 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09646DA185F4C0200799765 /* TabelCell.m in Sources */,
 				A0F9A13E1859BB18002B0146 /* ViewController.m in Sources */,
 				A0F9A1381859BB18002B0146 /* AppDelegate.m in Sources */,
 				A0F9A1341859BB18002B0146 /* main.m in Sources */,
+				A09646D5185F4B4500799765 /* TabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,11 +392,13 @@
 		A0F9A1571859BB18002B0146 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontTest/FontTest-Prefix.pch";
 				INFOPLIST_FILE = "FontTest/FontTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,11 +407,13 @@
 		A0F9A1581859BB18002B0146 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontTest/FontTest-Prefix.pch";
 				INFOPLIST_FILE = "FontTest/FontTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +480,7 @@
 				A0F9A1581859BB18002B0146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0F9A1591859BB18002B0146 /* Build configuration list for PBXNativeTarget "FontTestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +489,7 @@
 				A0F9A15B1859BB18002B0146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
